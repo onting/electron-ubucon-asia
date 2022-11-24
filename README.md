@@ -1,40 +1,16 @@
-# electron-quick-start
+# Ubuntu Frame on YOUR hands 워크숍 예제 코드
 
-**Clone and run for a quick way to see Electron in action.**
+electron 시작 튜토리얼 코드입니다.
 
-This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/latest/tutorial/quick-start) within the Electron documentation.
+## 해 볼 작업
 
-A basic Electron application needs just these files:
+### 앱 테스트
+```
+npm start   # 빌드 및 실행해서 앱을 확인해봅시다
 
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
-- `preload.js` - A content script that runs before the renderer process loads.
-
-You can learn more about each of these components in depth within the [Tutorial](https://electronjs.org/docs/latest/tutorial/tutorial-prerequisites).
-
-## To Use
-
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-git clone https://github.com/electron/electron-quick-start
-# Go into the repository
-cd electron-quick-start
-# Install dependencies
-npm install
-# Run the app
-npm start
+WAYLAND_DISPLAY=wayland-99 ubuntu-frame   # Wayland 스크린 시뮬레이터 실행 (wayland-99 소켓을 생성)
+WAYLAND_DISPLAY=wayland-99 npm start      # 앱을 wayland-99 소켓에 붙입니다.
 ```
 
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
-
-## Resources for Learning Electron
-
-- [electronjs.org/docs](https://electronjs.org/docs) - all of Electron's documentation
-- [Electron Fiddle](https://electronjs.org/fiddle) - Electron Fiddle, an app to test small Electron experiments
-
-## License
-
-[CC0 1.0 (Public Domain)](LICENSE.md)
+### Ubuntu Frame을 위한 snap 패키징
+설명 참고
